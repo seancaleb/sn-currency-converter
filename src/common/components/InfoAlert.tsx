@@ -19,7 +19,7 @@ const alertProps = {
   bg: "blue.50",
   w: { base: "100%", lg: "50%" },
   alignItems: "flex-start",
-  borderRadius: "6px",
+  borderRadius: "3px",
   display: { base: "none", sm: "flex" },
 };
 
