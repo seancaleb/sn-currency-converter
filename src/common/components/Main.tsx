@@ -28,5 +28,5 @@ const MainContainer = styled(Box).attrs((props) => ({
 
 const boxProps = {
   minH: "100vh",
-  bgGradient: "linear-gradient(to-r, blue.500, blue.400, blue.500)",
+  bgGradient: "linear-gradient(to-r, #111, #222, #111)",
 };
