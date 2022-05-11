@@ -49,7 +49,7 @@ const App = () => {
     <Main>
       <Wrapper>
         <Flex flexDir="column" gap="5px">
-          <Heading letterSpacing="-1px" size="lg">
+          <Heading letterSpacing="-.75px" size="lg">
             Currency Converter
           </Heading>
           <Text color="gray.600" letterSpacing="-.25px">
