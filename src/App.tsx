@@ -48,8 +48,8 @@ const App = () => {
   return (
     <Main>
       <Wrapper>
-        <Flex flexDir="column" gap="10px">
-          <Heading letterSpacing="-.75px" size="lg">
+        <Flex flexDir="column" gap="5px">
+          <Heading letterSpacing="-1px" size="lg">
             Currency Converter
           </Heading>
           <Text color="gray.600" letterSpacing="-.25px">
@@ -106,8 +106,9 @@ const Wrapper = styled(Flex).attrs({
   flexDir: "column",
   w: "100%",
   bg: "white",
-  p: { base: "30px", md: "40px" },
-  borderRadius: "6px",
+  px: { base: "30px", md: "40px" },
+  py: { base: "40px", md: "50px" },
+  borderRadius: "10px",
   boxShadow: "md",
   gap: "30px",
 })``;
