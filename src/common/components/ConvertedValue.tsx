@@ -18,10 +18,10 @@ const ConvertedValue = ({ convertedValue }: Props) => {
       transition={{ duration: 0.4 }}
       flexDir="column"
       gap="10px"
-      py="20px"
+      py="10px"
       justify="center"
     >
-      <Heading letterSpacing="-.25px" size="md" color="gray.500" fontWeight="semibold">
+      <Heading letterSpacing="-.25px" size="md" color="gray.500" fontWeight="medium">
         {context?.amount} {context?.selectedFrom?.name} = {""}
       </Heading>
       <Heading letterSpacing="-.75px" size="lg">
