@@ -74,8 +74,8 @@ const App = () => {
         <Flex
           gap="20px"
           flexDir={{ base: "column", lg: "row" }}
-          align={{ base: "center", lg: "flex-end" }}
-          justify="space-between"
+          alignItems={{ base: "flex-start", lg: "flex-end" }}
+          justifyContent="space-between"
         >
           <InfoAlert />
           {!convertedValue && (
@@ -86,11 +86,11 @@ const App = () => {
               loadingText="Converting"
               disabled={!context?.selectedFrom || !context?.selectedTo}
             >
-              Convert
+              Convert value
             </Button>
           )}
           {convertedValue && (
-            <Text color="gray.600" fontSize="13px">
+            <Text color="gray.600" fontSize="13px" textAlign="start">
               Last updated at {convertedValue?.date}
             </Text>
           )}
@@ -106,9 +106,11 @@ const Wrapper = styled(Flex).attrs({
   flexDir: "column",
   w: "100%",
   bg: "white",
+  justifyContent: "space-evenly",
   px: { base: "30px", md: "40px" },
   py: { base: "40px", md: "50px" },
-  borderRadius: "10px",
+  borderRadius: { base: "0px", sm: "10px" },
   boxShadow: "md",
   gap: "30px",
+  minH: { base: "100vh", sm: "unset" },
 })``;

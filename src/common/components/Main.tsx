@@ -22,8 +22,8 @@ const MainContainer = styled(Box).attrs((props) => ({
   minH: "100vh",
   display: "flex",
   alignItems: "center",
-  px: "30px",
-  py: "60px",
+  px: { base: "0px", sm: "15px", md: "30px" },
+  py: { base: "0px", sm: "60px" },
 }))``;
 
 const boxProps = {
